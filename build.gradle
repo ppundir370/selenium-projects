@@ -20,6 +20,7 @@ repositories {
 dependencies {
 
     testImplementation 'org.testng:testng:6.9.10'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.4.3'
 
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     implementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
@@ -27,6 +28,7 @@ dependencies {
 }
 
 buildDir = 'build'
+
 
 test {
     useTestNG() {
